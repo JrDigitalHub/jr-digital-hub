@@ -1,43 +1,45 @@
-# JR Digital Hub LTD — Corporate Homepage
+# JR Digital Hub LTD — Corporate Web Infrastructure
 
-This repository contains the source code for the official enterprise landing page of JR Digital Hub LTD, a registered technology automation and applied R&D lab. Built with Next.js and Tailwind CSS, the site serves as the public interface for our flagship systems, integrations, and deployment roadmaps.
+This repository contains the source code for the official enterprise web portal of JR Digital Hub LTD. Operating as an applied technology lab and infrastructure provider, JR Digital Hub engineers autonomous business systems, decentralized protocols, and hardware integrations for the global economy. 
 
----
-
-## 🛠️ Infrastructure & Flagship Products
-
-### 1. ZENO OS (Core Engine)
-A Neural Business Operating System functioning as a universal autonomous brain for enterprise execution. ZENO automates complex back-office operations, lead-generation pipelines, and data ingestion via highly concurrent Go-based event routing and asynchronous processing loops.
-
-### 2. Applied R&D Labs
-While currently focused on scaling our enterprise software infrastructure, JR Digital Hub maintains active research protocols across multiple disciplines, to be expanded in future deployment phases:
-*   **Web3 & Governance:** *Civic Budget Explain-o-Matic* — Utilizing decentralized agent frameworks to democratize and synthesize complex public finance data.
-*   **Robotics & Hardware:** *SRR-CI* (Smartphone Repair Robotic Interface) and *JR-Cart* (Autonomous Industrial Differential Drive System) — Bridging neural software intelligence with physical automation hardware.
+This interface serves as the public directory for our flagship OS, active R&D divisions, and ecosystem partnerships.
 
 ---
 
-## 🤝 Ecosystem Partners & Integrations
+## 🛠️ Core Infrastructure
 
-*   **SHOPLINE:** JR Digital Hub is an officially integrated ecosystem partner. ZENO OS provides autonomous workflow execution and intelligent data orchestration natively for SHOPLINE's global network of over 600,000 merchants.
-
----
-
-## 🚀 Engineering Roadmap
-
-Our roadmap is strictly focused on product development, architectural hardening, and systematic distribution:
-
-*   **Phase 1: Core Engine Optimization** — Finalizing the ZENO Neural OS core architecture, optimizing concurrent Go event routers, and perfecting autonomous scraping and data ingestion pipelines.
-*   **Phase 2: SHOPLINE Network Integration** — Deploying ZENO natively to the SHOPLINE marketplace, initiating automated workflow scaling for global merchants.
-*   **Phase 3: Cross-Platform Interoperability** — Expanding ZENO's integration bridges to encompass multi-channel commerce platforms, creating a platform-agnostic digital workforces.
-*   **Phase 4: Digital-Physical Synergy** — Re-activating the hardware and Web2.5 protocols (SRR-CI and JR-Cart) to unify autonomous digital software with localized physical supply chains.
+### ZENO OS (Neural Business Operating System)
+ZENO functions as a universal autonomous brain for enterprise execution. Designed to replace fragmented software stacks, ZENO handles complete business automation, intelligent lead management, and complex data orchestration for high-volume commercial environments. 
 
 ---
 
-## 📦 Tech Stack & Deployment
+## 🔬 Applied R&D Labs
+
+Beyond commercial software, JR Digital Hub LTD maintains active, multi-disciplinary research divisions focused on bridging digital intelligence with physical and decentralized ecosystems:
+
+*   **Applied Robotics & Physical Automation:** Development of the **SRR-CI** (Smartphone Repair Robotic Interface) and the **JR-Cart** (Autonomous Industrial Differential Drive System), engineering the precise integration of software vision systems with physical hardware.
+*   **Web3 & Civic Technology:** Architecture of the **Civic Budget Explain-o-Matic**, leveraging decentralized agent frameworks to synthesize complex public spending data and enforce institutional transparency.
+
+---
+
+## 🤝 Ecosystem & Global Integrations
+
+JR Digital Hub builds borderless infrastructure designed for immediate deployment within established commercial networks. 
+
+*   **SHOPLINE:** ZENO OS is an officially integrated ecosystem partner, executing autonomous workflows and back-office automation natively for SHOPLINE's global network of over 600,000 merchants.
+
+---
+
+## 📦 Technical Deployment Stack
+
+The corporate interface is engineered for maximum performance, global edge delivery, and aesthetic minimalism:
 
 *   **Framework:** Next.js (App Router)
-*   **Styling:** Tailwind CSS
-*   **Hosting:** Vercel Production Environment
+*   **Styling:** Tailwind CSS (Strict adherence to corporate minimalist brand guidelines)
+*   **Hosting:** Vercel Edge Network
 
-## 📄 License
+---
+
+## 📄 Corporate Identity & Licensing
+
 Property of JR Digital Hub LTD. All rights reserved.
