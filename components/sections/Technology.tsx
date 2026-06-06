@@ -1,11 +1,11 @@
 export default function Technology() {
   return (
-    <section id="technology" className="w-full py-24 bg-[#050505] flex flex-col items-center border-t border-gray-900/50">
+    <section id="technology" className="w-full py-24 bg-[#050505] flex flex-col items-center border-t border-gray-900/50 scroll-mt-24">
       <div className="max-w-7xl w-full px-6 flex flex-col gap-12">
         
         {/* Section Header */}
         <div className="flex flex-col gap-4 text-center md:text-left">
-          <h2 className="text-sm font-semibold tracking-widest text-[var(--brand)] uppercase">
+          <h2 className="text-sm font-semibold tracking-widest text-[#D4AF37] uppercase">
             Systems Architecture
           </h2>
           <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white max-w-3xl">

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+    <section id="hero" className="relative w-full min-h-[90vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden scroll-mt-24">
       
       {/* Background radial gradient for depth */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
@@ -28,7 +28,7 @@ export default function Hero() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-          <button className="px-8 py-3 rounded-md bg-[var(--brand)] text-white font-semibold tracking-wide transition-all hover:bg-opacity-90 hover:shadow-[0_0_20px_var(--brand)]">
+          <button className="px-8 py-3 rounded-md bg-[#D4AF37] text-black font-semibold tracking-wide transition-all hover:bg-[#c89f2f] hover:shadow-[0_0_20px_rgba(212,175,55,0.35)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]">
             Initialize ZENO OS
           </button>
           

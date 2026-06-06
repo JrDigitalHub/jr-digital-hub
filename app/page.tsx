@@ -2,6 +2,8 @@ import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
 import Ecosystem from "@/components/sections/Ecosystem";
 import Technology from "@/components/sections/Technology";
+import Partners from "@/components/sections/Partners";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Hero />
       <Ecosystem />
       <Technology />
+      <Partners />
+      <Footer />
     </main>
   );
 }
