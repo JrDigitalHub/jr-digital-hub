@@ -23,12 +23,18 @@ export default function BookPage() {
         }
       });
 
+      console.log("Formspree response:", response.status, response.statusText);
+      
       if (response.ok) {
+        console.log("Form submitted successfully!");
         setFormState("success");
       } else {
+        const errorData = await response.json();
+        console.error("Formspree error:", errorData);
         setFormState("error");
       }
     } catch (error) {
+      console.error("Network error during submission:", error);
       setFormState("error");
     }
   };
@@ -57,14 +63,25 @@ export default function BookPage() {
 
         {/* Dynamic Form Area */}
         {formState === "success" ? (
-          <div className="animate-in fade-in duration-500 h-[700px] w-full rounded-lg overflow-hidden border border-gray-800 bg-white">
-            <iframe 
-              src="https://calendly.com/jrdigitalhubltd/zeno-architecture-review?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=d4af37" 
-              width="100%" 
-              height="100%" 
-              frameBorder="0"
-              title="Schedule Deployment Review"
-            ></iframe>
+          <div className="space-y-6 animate-in fade-in duration-500">
+            <div className="p-8 bg-green-900/20 border border-green-500/50 rounded-lg text-center">
+              <p className="text-green-400 font-semibold text-lg mb-4">✓ Telemetry Transmitted Successfully!</p>
+              <p className="text-gray-300 mb-6">Your deployment parameters have been received. Click below to select your preferred review time.</p>
+              <a
+                href="https://calendly.com/jrdigitalhubltd/zeno-architecture-review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 rounded-md bg-[#D4AF37] text-black font-bold tracking-widest uppercase transition-all hover:bg-[#c89f2f] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
+              >
+                → Schedule Your Review on Calendly
+              </a>
+            </div>
+            <button
+              onClick={() => setFormState("idle")}
+              className="text-gray-400 hover:text-white text-sm underline"
+            >
+              ← Edit form
+            </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -106,7 +123,16 @@ export default function BookPage() {
             </div>
 
             {formState === "error" && (
-              <p className="text-red-500 text-sm font-bold">Transmission failed. Please try again or contact us directly.</p>
+              <div className="p-4 bg-red-900/20 border border-red-500/50 rounded-lg">
+                <p className="text-red-400 text-sm font-bold mb-2">❌ Transmission failed. Please try again or contact us directly.</p>
+                <button
+                  type="button"
+                  onClick={() => setFormState("idle")}
+                  className="text-xs text-red-400 hover:text-red-300 underline"
+                >
+                  Try again
+                </button>
+              </div>
             )}
 
             <div className="pt-4 border-t border-gray-800 flex justify-end">
