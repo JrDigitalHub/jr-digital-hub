@@ -17,9 +17,9 @@ export default function Footer() {
               Deploy ZENO OS or explore our applied hardware solutions.
             </p>
           </div>
-          <button className="px-8 py-3 rounded-md bg-[#D4AF37] text-black font-semibold tracking-wide transition-all hover:bg-[#c89f2f] hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]">
+          <Link href="/book" className="px-8 py-3 rounded-md bg-[#D4AF37] text-black font-semibold tracking-wide transition-all hover:bg-[#c89f2f] hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]">
             Book a Demo
-          </button>
+          </Link>
         </div>
 
         {/* Middle Section: Links & Info */}
