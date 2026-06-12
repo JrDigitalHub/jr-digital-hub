@@ -21,19 +21,19 @@ export default function Navbar() {
 
         {/* Desktop Routing Links */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="#hero" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          <Link href="/" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
             Home
           </Link>
-          <Link href="#about" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          <Link href="/about" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
             About
           </Link>
-          <Link href="#ecosystem" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          <Link href="/#ecosystem" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
             Ecosystem
           </Link>
-          <Link href="#technology" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          <Link href="/#technology" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
             Technology
           </Link>
-          <Link href="#partners" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+          <Link href="/#partners" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
             Partners
           </Link>
         </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center">
-          <Link href="#about" className="px-6 py-2.5 rounded-md bg-[#D4AF37] text-black text-sm font-semibold tracking-wide transition-all hover:bg-[#c89f2f] hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]">
+          <Link href="/book" className="px-6 py-2.5 rounded-md bg-[#D4AF37] text-black text-sm font-semibold tracking-wide transition-all hover:bg-[#c89f2f] hover:shadow-[0_0_15px_rgba(212,175,55,0.35)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D4AF37]">
             Book a Demo
           </Link>
         </div>
@@ -68,22 +68,22 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-[#0A0A0A]/95 border-t border-gray-800/50">
           <div className="px-6 py-4 flex flex-col gap-3">
-            <Link href="#hero" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
+            <Link href="/" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
               Home
             </Link>
-            <Link href="#about" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
+            <Link href="/about" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
               About
             </Link>
-            <Link href="#ecosystem" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
+            <Link href="/#ecosystem" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
               Ecosystem
             </Link>
-            <Link href="#technology" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
+            <Link href="/#technology" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
               Technology
             </Link>
-            <Link href="#partners" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
+            <Link href="/#partners" onClick={() => setOpen(false)} className="text-sm font-medium text-gray-300 hover:text-white">
               Partners
             </Link>
-            <Link href="#about" onClick={() => setOpen(false)} className="px-4 py-2 mt-2 rounded-md bg-[#D4AF37] text-black text-sm font-semibold tracking-wide inline-block text-center">
+            <Link href="/book" onClick={() => setOpen(false)} className="px-4 py-2 mt-2 rounded-md bg-[#D4AF37] text-black text-sm font-semibold tracking-wide inline-block text-center">
               Book a Demo
             </Link>
           </div>
